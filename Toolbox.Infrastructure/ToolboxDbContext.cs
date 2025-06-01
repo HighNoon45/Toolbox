@@ -5,9 +5,9 @@ namespace Toolbox.Infrastructure
 {
     public class ToolboxDbContext : DbContext
     {
-        DbSet<Chat> Chats { get; set; }
-        DbSet<Request> Requests { get; set; }
-        DbSet<Chat> Response { get; set; }
+        public DbSet<Chat> Chats { get; set; }
+        public DbSet<Request> Requests { get; set; }
+        public DbSet<Response> Responses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

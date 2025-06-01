@@ -1,25 +1,36 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Toolbox.Infrastructure;
 using Toolbox.Infrastructure.Entities;
 
 namespace Toolbox.Core.Services
 {
     public class ChatService
     {
-        public void create(){
-
+        ToolboxDbContext dbContext;
+        public ChatService(ToolboxDbContext AppDbContext)
+        {
+            dbContext = AppDbContext;
         }
-        public void update() {
-            
+        public void create(Chat chat)
+        {
+            dbContext.Chats.Add(chat);
         }
-        public void delete() {
-        
+        public void update(Chat chat)
+        {
+            dbContext.Chats.Update(chat);
         }
-        public Chat read(){
-            return new Chat();
+        public void delete(int id)
+        {
+            dbContext.Chats.Where(x => x.Id.Equals(id)).ExecuteDelete();
+        }
+        public Chat read(int id)
+        {
+            return dbContext.Chats.FirstOrDefault(x => x.Id == id);
         }
     }
 }
