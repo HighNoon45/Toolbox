@@ -12,7 +12,7 @@ namespace Toolbox.Infrastructure
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost;Database=ToolDB;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-V5M89SE\SQLEXPRESS;Database=ToolDB;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
