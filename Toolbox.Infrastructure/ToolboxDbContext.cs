@@ -16,7 +16,15 @@ namespace Toolbox.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Chat>()
+                .HasOne(c => c.Request)
+                .WithOne(r => r.Chat)
+                .HasForeignKey<Chat>(c => c.RequestId);
+
+            modelBuilder.Entity<Chat>()
+                .HasOne(c => c.Response)
+                .WithOne(r => r.Chat)
+                .HasForeignKey<Chat>(c => c.ResponseId);
         }
     }
 }
