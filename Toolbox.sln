@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolbox.Infrastructure", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toolbox.Core", "Toolbox.Core\Toolbox.Core.csproj", "{A1B5EFC1-5EEB-4D88-B6A2-B025C26D7D8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbot.GUI", "Chatbot.GUI\Chatbot.GUI.csproj", "{927C4C64-2338-4FDF-A987-B2AA355621D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A1B5EFC1-5EEB-4D88-B6A2-B025C26D7D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1B5EFC1-5EEB-4D88-B6A2-B025C26D7D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1B5EFC1-5EEB-4D88-B6A2-B025C26D7D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927C4C64-2338-4FDF-A987-B2AA355621D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927C4C64-2338-4FDF-A987-B2AA355621D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927C4C64-2338-4FDF-A987-B2AA355621D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927C4C64-2338-4FDF-A987-B2AA355621D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
