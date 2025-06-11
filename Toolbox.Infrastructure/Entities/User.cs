@@ -12,5 +12,7 @@ namespace Toolbox.Infrastructure.Entities
         public string PasswordHash { get; set; }
         [Required]
         public string PasswordSalt { get; set; }
+
+        public ICollection<Chat> Chats { get; set; } = new List<Chat>();
     }
 }

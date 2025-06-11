@@ -15,6 +15,7 @@ namespace Toolbox.Infrastructure.Entities
         public bool Done { get; set; }
         public string Context { get; set; }
         public long TotalDuration { get; set; }
+        public long LoadDuration { get; set; }
         public int PromptEvalCount { get; set; }
         public long PromptEvalDuration { get; set; }
         public int EvalCount { get; set; }

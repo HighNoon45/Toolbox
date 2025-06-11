@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Toolbox.Infrastructure;
 
@@ -11,9 +12,11 @@ using Toolbox.Infrastructure;
 namespace Toolbox.Infrastructure.Migrations
 {
     [DbContext(typeof(ToolboxDbContext))]
-    partial class ToolboxDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250611140943_UserMigration")]
+    partial class UserMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
