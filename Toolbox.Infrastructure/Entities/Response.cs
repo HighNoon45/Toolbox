@@ -9,15 +9,18 @@ namespace Toolbox.Infrastructure.Entities
     public class Response
     {
         public int Id { get; set; }
-        public string model { get; set; }
-        public string created_at { get; set; }
-        public string response { get; set; }
-        public string done { get; set; }
-        public string context { get; set; }
-        public string total_duration { get; set; }
-        public string prompt_eval_count { get; set; }
-        public string prompt_eval_duration { get; set; }
-        public string eval_count { get; set; }
-        public string eval_duration { get; set; }
+        public string Model { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public string ResponseText { get; set; }
+        public bool Done { get; set; }
+        public string Context { get; set; }
+        public long TotalDuration { get; set; }
+        public int PromptEvalCount { get; set; }
+        public long PromptEvalDuration { get; set; }
+        public int EvalCount { get; set; }
+        public long EvalDuration { get; set; }
+
+        // Navigation property
+        public Chat Chat { get; set; }
     }
 }

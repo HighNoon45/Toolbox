@@ -10,7 +10,12 @@ namespace Toolbox.Infrastructure.Entities
     {
         public int Id { get; set; }
         public int UserId { get; set; }
+        public DateTime CreatedAt { get; set; }
+
         public int RequestId { get; set; }
+        public Request Request { get; set; }
+
         public int ResponseId { get; set; }
+        public Response Response { get; set; }
     }
 }

@@ -8,9 +8,12 @@ namespace Toolbox.Infrastructure.Entities
 {
     public class Request
     {
-        //stream false must be set to send end return json objects
         public int Id { get; set; }
-        public string model { get; set; }
-        public string prompt { get; set; }
+        public string Model { get; set; }
+        public string Prompt { get; set; }
+        public DateTime CreatedAt { get; set; }
+
+        // Navigation property
+        public Chat Chat { get; set; }
     }
 }
