@@ -13,7 +13,7 @@ namespace Toolbox.Infrastructure
         {
             optionsBuilder.UseSqlServer(@"Server=localhost;Database=ToolDB;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;");
         }
-
+        //Add-Migration InitialCreate -OutputDir "Migrations"
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Chat>()
